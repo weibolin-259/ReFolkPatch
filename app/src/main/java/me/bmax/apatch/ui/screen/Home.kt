@@ -383,6 +383,7 @@ private data class RebootOption(
 @Composable
 private fun getRebootOptions(): List<RebootOption> = listOf(
     RebootOption(R.string.reboot, "", Icons.Filled.Refresh),
+    RebootOption(R.string.reboot_soft, "soft_reboot", Icons.Outlined.RestartAlt),
     RebootOption(R.string.reboot_recovery, "recovery", Icons.Outlined.SystemUpdate),
     RebootOption(R.string.reboot_bootloader, "bootloader", Icons.Outlined.Memory),
     RebootOption(R.string.reboot_download, "download", Icons.Outlined.Download),
