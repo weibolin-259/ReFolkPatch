@@ -734,7 +734,7 @@ Upewnij się, że aplikacja jest całkowicie zamknięta i ponownie otwarta, aby 
     <string name="settings_auto_backup_boot">Automatyczna kopia zapasowa Boot</string>
     <string name="settings_auto_backup_boot_summary">Automatycznie kopiuj Boot do lokalnego magazynu (Downloads/FolkPatch/BootBackups)</string>
     <!-- Auto-added missing strings -->
-    <string name="app_name" translatable="false">FolkPatch</string>
+    <string name="app_name" translatable="false">ReFolkPatch</string>
     <!-- Home Layout Strings -->
     <string name="settings_home_layout_style">Styl strony głównej</string>
     <string name="settings_home_layout_default">Lista</string>
@@ -1104,7 +1104,7 @@ Upewnij się, że aplikacja jest całkowicie zamknięta i ponownie otwarta, aby 
     <string name="loading_apis">Ładowanie źródeł API…</string>
     <string name="retry">Ponów próbę</string>
     <string name="app_title_fpatch">FPatch</string>
-    <string name="app_title_folkpatch">FolkPatch</string>
+    <string name="app_title_folkpatch">ReFolkPatch</string>
     <string name="app_title_kernelpatch">KernelPatch</string>
     <string name="app_title_kernelsu">KernelSU</string>
     <string name="app_title_supersu">SuperSU</string>

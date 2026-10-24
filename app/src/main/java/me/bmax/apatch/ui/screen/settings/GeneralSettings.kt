@@ -107,7 +107,7 @@ fun GeneralSettingsContent(
     val appTitleTitle = stringResource(id = R.string.settings_app_title)
     var currentAppTitle by remember { mutableStateOf(prefs.getString("app_title", "folkpatch") ?: "folkpatch") }
     val appTitleLabel = when (currentAppTitle) {
-        "custom" -> remember { prefs.getString("custom_app_title", "FolkPatch") } ?: stringResource(R.string.app_title_custom)
+        "custom" -> remember { prefs.getString("custom_app_title", "ReFolkPatch") } ?: stringResource(R.string.app_title_custom)
         "fpatch" -> stringResource(R.string.app_title_fpatch)
         "apatch_folk" -> stringResource(R.string.app_title_apatch_folk)
         "apatchx" -> stringResource(R.string.app_title_apatchx)
@@ -123,10 +123,10 @@ fun GeneralSettingsContent(
     }
 
     val customAppTitleTitle = stringResource(id = R.string.settings_custom_app_title)
-    var currentCustomAppTitle by remember { mutableStateOf(prefs.getString("custom_app_title", "FolkPatch") ?: "FolkPatch") }
+    var currentCustomAppTitle by remember { mutableStateOf(prefs.getString("custom_app_title", "ReFolkPatch") ?: "ReFolkPatch") }
 
     val desktopAppNameTitle = stringResource(id = R.string.desktop_app_name)
-    var currentDesktopAppName by remember { mutableStateOf(prefs.getString("desktop_app_name", "FolkPatch") ?: "FolkPatch") }
+    var currentDesktopAppName by remember { mutableStateOf(prefs.getString("desktop_app_name", "ReFolkPatch") ?: "ReFolkPatch") }
 
     val dpiTitle = stringResource(id = R.string.settings_app_dpi)
     val currentDpiVal = DPIUtils.currentDpi
