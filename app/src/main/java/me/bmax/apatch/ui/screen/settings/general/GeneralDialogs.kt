@@ -527,7 +527,7 @@ fun AppTitleChooseDialog(showDialog: MutableState<Boolean>, onTitleChanged: (Str
 fun CustomAppTitleDialog(showDialog: MutableState<Boolean>, snackBarHost: SnackbarHostState, onTitleChanged: (String) -> Unit = {}) {
     val prefs = APApplication.sharedPreferences
     var customTitle by remember {
-        mutableStateOf(prefs.getString("custom_app_title", "FolkPatch") ?: "FolkPatch")
+        mutableStateOf(prefs.getString("custom_app_title", "ReFolkPatch") ?: "ReFolkPatch")
     }
 
     BasicAlertDialog(
@@ -594,7 +594,7 @@ fun CustomAppTitleDialog(showDialog: MutableState<Boolean>, snackBarHost: Snackb
 fun DesktopAppNameChooseDialog(showDialog: MutableState<Boolean>, onNameChanged: (String) -> Unit = {}) {
     val prefs = APApplication.sharedPreferences
     val context = LocalContext.current
-    val currentName = remember { prefs.getString("desktop_app_name", "FolkPatch") }
+    val currentName = remember { prefs.getString("desktop_app_name", "ReFolkPatch") }
     BasicAlertDialog(
         onDismissRequest = { showDialog.value = false }, properties = DialogProperties(
             decorFitsSystemWindows = true,
@@ -612,17 +612,17 @@ fun DesktopAppNameChooseDialog(showDialog: MutableState<Boolean>, onNameChanged:
             LazyColumn {
                 item {
                     ListItem(
-                        headlineContent = { Text(text = "FolkPatch") },
+                        headlineContent = { Text(text = "ReFolkPatch") },
                         modifier = Modifier.clickable {
                             showDialog.value = false
                             prefs.edit {
-                                putString("desktop_app_name", "FolkPatch")
+                                putString("desktop_app_name", "ReFolkPatch")
                             }
-                            onNameChanged("FolkPatch")
+                            onNameChanged("ReFolkPatch")
                             LauncherIconUtils.applySaved(context)
                         },
                         trailingContent = {
-                            if (currentName == "FolkPatch" || currentName == null) {
+                            if (currentName == "ReFolkPatch" || currentName == null) {
                                 Icon(Icons.Filled.Check, contentDescription = null)
                             }
                         }

@@ -475,7 +475,7 @@ private fun TopBar(
     }
     
     val currentTitle = prefs.getString("app_title", "folkpatch") ?: "folkpatch"
-    val customAppTitle = prefs.getString("custom_app_title", "FolkPatch") ?: "FolkPatch"
+    val customAppTitle = prefs.getString("custom_app_title", "ReFolkPatch") ?: "ReFolkPatch"
     val isCustomTitle = currentTitle == "custom"
     val titleResId = when (currentTitle) {
         "custom" -> null
